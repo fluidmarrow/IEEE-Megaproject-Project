@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Enter your mobile number", Toast.LENGTH_SHORT).show();
                 }
                 else{
-
                     try {
                         String api="AolHa8PNKw7ZGRWpDJYSUCz3FQ4Eq5ue1v2cfO9BgdbysjitxTbSL9Vy32KF7ZQXINDH4Ocahj8mnfGC";
                         otp = new Random().nextInt(8998) ;
