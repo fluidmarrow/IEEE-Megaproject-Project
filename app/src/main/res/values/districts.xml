@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="district_list">
+        <item>Select District</item>
+        <item>Bokaro</item>
+        <item>Dhanbad</item>
+        <item>Jamshedpur</item>
+        <item>Ranchi</item>
+    </string-array>
+</resources>
