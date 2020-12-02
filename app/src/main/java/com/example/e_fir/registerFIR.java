@@ -100,7 +100,7 @@ public class registerFIR extends AppCompatActivity implements AdapterView.OnItem
 
     }
     public void SaveFunction(String name,String father,String location,String district,String category,String caseDescription,String number){
-        String url = "";
+        String url = "https://dry-anchorage-43299.herokuapp.com/firs";
         RequestQueue requestQueue = Volley.newRequestQueue(Objects.requireNonNull(registerFIR.this));
         JSONObject o = new JSONObject();
         try{
