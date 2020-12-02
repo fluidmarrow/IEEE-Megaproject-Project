@@ -83,7 +83,7 @@ public class DataActivity extends AppCompatActivity {
     }
 
     public void Adapter(){
-        String url="";
+        String url="https://dry-anchorage-43299.herokuapp.com/firs";
         RequestQueue requestQueue = Volley.newRequestQueue(Objects.requireNonNull(DataActivity.this));
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override

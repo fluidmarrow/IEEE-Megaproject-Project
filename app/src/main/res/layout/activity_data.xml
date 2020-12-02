@@ -35,7 +35,6 @@
             android:checked="true"
             android:gravity="center"
             android:text="PENDING"
-            android:textColor="@color/drawable_units_tab_text_color_selector"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -48,7 +47,6 @@
             android:checked="false"
             android:text="FINISHED"
             android:gravity="center"
-            android:textColor="@color/drawable_units_tab_text_color_selector"
             android:textSize="16sp"
             android:textStyle="bold"
             android:button="@null"/>

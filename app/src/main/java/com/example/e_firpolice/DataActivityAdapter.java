@@ -59,7 +59,7 @@ public class DataActivityAdapter extends RecyclerView.Adapter<DataActivityAdapte
         holder.rb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url="localhost:3000/firs/"+ u.getId();
+                String url="https://dry-anchorage-43299.herokuapp.com/firs/"+ u.getId();
                 RequestQueue requestQueue = Volley.newRequestQueue(Objects.requireNonNull(ctx));
                 JSONObject o = new JSONObject();
                 try {

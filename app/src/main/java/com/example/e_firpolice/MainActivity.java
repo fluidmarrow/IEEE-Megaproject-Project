@@ -2,6 +2,7 @@ package com.example.e_firpolice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void login(String name,String password){
         RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
-        String url = "";
+        String url = "https://dry-anchorage-43299.herokuapp.com/users/login";
         JSONObject o = new JSONObject();
         try{
             o.put("name",name);
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                     String token = response.getString("token");
                     SharedPreferences preferences = MainActivity.this.getSharedPreferences("eFIR", MODE_PRIVATE);
                     preferences.edit().putString("TOKEN",token).apply();
+                    Intent i = new Intent(MainActivity.this,DataActivity.class);
+                    startActivity(i);
                 }
                 catch (JSONException e) {
                     e.printStackTrace();

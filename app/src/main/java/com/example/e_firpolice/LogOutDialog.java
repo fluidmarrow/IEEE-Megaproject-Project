@@ -53,7 +53,7 @@ public class LogOutDialog extends AppCompatDialogFragment
     }
     public void logout(){
         RequestQueue requestQueue = Volley.newRequestQueue(Objects.requireNonNull(ctx));
-        String url="";
+        String url="https://dry-anchorage-43299.herokuapp.com/users/logout";
         JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
